@@ -1,25 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name=" theme-color" content="#f00">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <script src="https://kit.fontawesome.com/d577d4a2e5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-      <!-- Hotjar Tracking Code for http://lasseaakjaer.com/eaa/bibliotek/ -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:1733646,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
     <title>Bibliotek | EAA</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -30,11 +20,10 @@
                 <li><i class="fas fa-info"></i> Info</li>
             </ul>
 
-            
+
 
         </nav>
-        <!-- <p> <span><i class="fa fa-user" aria-hidden="true"></i></span> Log ind</p> -->
-        
+
     </header>
     <section class="hero">
         <h1>Bibliotek</h1>
@@ -53,30 +42,18 @@
                     <option value="Spil">Spil</option>
                     <option value="Musik">Musik</option>
                     <option value="Medieudstyr">Medieudstyr</option>
-                  </select>
-                    
+                </select>
+
                 <input type="submit" value="Søg">
             </form>
             <h2 id="searchLabel">Søgning resultater</h2>
+            <i id="loading" class="fa fa-spinner fa-spin"></i>
             <div id="fill" class="datafetch">
-                <i id="loading" class="fa fa-spinner fa-spin"></i>
-        
-                <!-- <div class="anbefalet">
-                    <div class="placeholder-image">
-                        <img src="http://covers.openlibrary.org/b/isbn/1904764827-M.jpg?default=false" alt="Lord of the Rings">
-                    </div>
-                    <p>Lord of the Rings  <br> <span class="forfatter">af Ernest Mathijs</span></p>
-                    <p class="buy">Lån bog <span><i class="fa fa-shopping-basket" aria-hidden="true"></i></span></p>
-                </div> -->
+
             </div>
             <h2>Anbefalet til dig</h2>
             <div id="hented" class="datafetch">
-                <!-- <div class="anbefalet">
-                    <img src="http://web1.reindex.net/Covers/9788793050778.jpg" alt="bog">
-                    <p>Landbrugsøkonomi <span class="forfatter"> af Jens Christian Huusmann</span></p>
-                    <p class="buy">Lån bog <span><i class="fa fa-shopping-basket"></i></span></p>
-                </div> -->
-             
+
             </div>
         </div>
         <aside>
@@ -89,13 +66,14 @@
                 <li class="topics">Lån af medieudstyr</li>
             </ul>
         </aside>
-        
+
     </section>
     <div id="bibliotekar">
-        <video autoplay src="bibliotekar/vinker.mp4"></video>
+        <video autoplay loop src="bibliotekar/vinker.mp4"></video>
     </div>
     <script src="main.js"></script>
-  
+
 
 </body>
+
 </html>
